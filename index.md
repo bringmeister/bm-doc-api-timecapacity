@@ -13,4 +13,4 @@ A food delivery will always be scheduled to a certain time frame (time capacity)
 Depending on the delivery location and time the costs of each delivery will be calculated by supply and demand.
 The API Endpoint will deliver costs by time and location (matrix) and make chosen slots bookable, deletable, changeable.
 
-[Start here](/api/).
+[Start here]({{ site.baseurl }}/api/).
