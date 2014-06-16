@@ -26,7 +26,7 @@ exclude: [CNAME, Gemfile, Gemfile.lock, Makefile, README.md, LICENSE, vendor, ro
 
 # Project specific
 # Remember to change these!
-baseurl:      /doc
+baseurl:      /bm-doc-api-timecapacity
 title:        bringmeister
 tagline:      The developer guides to api time capacity
 description:
