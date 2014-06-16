@@ -50,8 +50,7 @@ All error objects have _field_ properties so that your client can tell what the 
 ## Endpoints
 
 ```sh
-$ curl {{ site.bringmeister.api }}/ \
-    -u 6f1ed002ab5595859014ebf0951522d9:bringmeister
+$ curl {{ site.bringmeister.api }}/
 ```
 
 > Response
@@ -61,21 +60,8 @@ Status: 200 OK
 ```
 ```json
 {
-  "urls_url": "{{ site.bringmeister.api }}/",
-  "version_url": "{{ site.bringmeister.api }}/version",
-  "locations_url": "{{ site.bringmeister.api }}/locations",
-  "terms_url": "{{ site.bringmeister.api }}/terms",
-  "faq_url": "{{ site.bringmeister.api }}/faq",
-  "privacy_policy_url": "{{ site.bringmeister.api }}/privacy_policy",
-  "login_url": "{{ site.bringmeister.api }}/login",
-  "user_url": "{{ site.bringmeister.api }}/user",
-  "password_url": "{{ site.bringmeister.api }}/password",
-  "credit_url": "{{ site.bringmeister.api }}/credit",
-  "phone_numbers_url": "{{ site.bringmeister.api }}/phone_numbers",
-  "cars_url": "{{ site.bringmeister.api }}/cars",
-  "bookings_url": "{{ site.bringmeister.api }}/bookings",
-  "violation_url": "{{ site.bringmeister.api }}/bookings/{booking_id}/violation",
-  "sesam_url": "{{ site.bringmeister.api }}/sesam"
+  "matrix_url": "{{ site.bringmeister.api }}/matrix",
+  "slot_url": "{{ site.bringmeister.api }}/slot",
 }
 ```
 
