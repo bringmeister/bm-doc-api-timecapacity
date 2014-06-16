@@ -79,10 +79,6 @@ Status: 200 OK
 }
 ```
 
-Keep in mind, that some of these urls are private. You need a _private key_ which you get when [logging in a user][login].
-For the public urls you need a _public key_.
-
-With a _private key_ you can access public urls.
 
   [REST]: http://en.wikipedia.org/wiki/Representational_State_Transfer
   [JSON]: http://www.json.org/
