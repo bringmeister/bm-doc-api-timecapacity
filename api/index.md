@@ -31,7 +31,7 @@ Status: 422 Unprocessable Entity
 }
 ```
 
-parku uses conventional HTTP response codes to indicate success or failure of an API request. In general, codes in the 2xx range indicate success, codes in the 4xx range indicate an error that resulted from the provided information (e.g. a required parameter was missing, etc.), and codes in the 5xx range indicate an error with parku's servers.
+bringmeister uses conventional HTTP response codes to indicate success or failure of an API request. In general, codes in the 2xx range indicate success, codes in the 4xx range indicate an error that resulted from the provided information (e.g. a required parameter was missing, etc.), and codes in the 5xx range indicate an error with bringmeister's servers.
 
 ### HTTP Status Codes Summary
 
@@ -43,15 +43,15 @@ Code   | Description
 `401`  | Unauthorized - No valid API key provided.
 `404`  | Not Found - The requested item doesn't exist.
 `422`  |  Unprocessable Entity
-`5xx`  | Server errors - something went wrong on parku's end.
+`5xx`  | Server errors - something went wrong on bringmeister's end.
 
 All error objects have _field_ properties so that your client can tell what the problem is. There is also an error _message_ to let you know what is wrong with the field.
 
 ## Endpoints
 
 ```sh
-$ curl {{ site.parku.api }}/ \
-    -u 6f1ed002ab5595859014ebf0951522d9:parku
+$ curl {{ site.bringmeister.api }}/ \
+    -u 6f1ed002ab5595859014ebf0951522d9:bringmeister
 ```
 
 > Response
@@ -61,21 +61,21 @@ Status: 200 OK
 ```
 ```json
 {
-  "urls_url": "{{ site.parku.api }}/",
-  "version_url": "{{ site.parku.api }}/version",
-  "locations_url": "{{ site.parku.api }}/locations",
-  "terms_url": "{{ site.parku.api }}/terms",
-  "faq_url": "{{ site.parku.api }}/faq",
-  "privacy_policy_url": "{{ site.parku.api }}/privacy_policy",
-  "login_url": "{{ site.parku.api }}/login",
-  "user_url": "{{ site.parku.api }}/user",
-  "password_url": "{{ site.parku.api }}/password",
-  "credit_url": "{{ site.parku.api }}/credit",
-  "phone_numbers_url": "{{ site.parku.api }}/phone_numbers",
-  "cars_url": "{{ site.parku.api }}/cars",
-  "bookings_url": "{{ site.parku.api }}/bookings",
-  "violation_url": "{{ site.parku.api }}/bookings/{booking_id}/violation",
-  "sesam_url": "{{ site.parku.api }}/sesam"
+  "urls_url": "{{ site.bringmeister.api }}/",
+  "version_url": "{{ site.bringmeister.api }}/version",
+  "locations_url": "{{ site.bringmeister.api }}/locations",
+  "terms_url": "{{ site.bringmeister.api }}/terms",
+  "faq_url": "{{ site.bringmeister.api }}/faq",
+  "privacy_policy_url": "{{ site.bringmeister.api }}/privacy_policy",
+  "login_url": "{{ site.bringmeister.api }}/login",
+  "user_url": "{{ site.bringmeister.api }}/user",
+  "password_url": "{{ site.bringmeister.api }}/password",
+  "credit_url": "{{ site.bringmeister.api }}/credit",
+  "phone_numbers_url": "{{ site.bringmeister.api }}/phone_numbers",
+  "cars_url": "{{ site.bringmeister.api }}/cars",
+  "bookings_url": "{{ site.bringmeister.api }}/bookings",
+  "violation_url": "{{ site.bringmeister.api }}/bookings/{booking_id}/violation",
+  "sesam_url": "{{ site.bringmeister.api }}/sesam"
 }
 ```
 

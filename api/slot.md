@@ -33,7 +33,7 @@ $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d/123
 
 ### HTTP Request
 
-`GET {{ site.parku.api }}/slot`
+`GET {{ site.bringmeister.api }}/slot`
 
 
 ### Parameters
@@ -69,7 +69,7 @@ $ curl {{ site.bringmeister.api }}/slot \
 
 ### HTTP Request
 
-`POST {{ site.parku.api }}/slot`
+`POST {{ site.bringmeister.api }}/slot`
 
 ### Parameters
 
@@ -102,7 +102,7 @@ $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d
 
 ### HTTP Request
 
-`DELETE {{ site.parku.api }}/slot/{slot_id}`
+`DELETE {{ site.bringmeister.api }}/slot/{slot_id}`
 
 ### Parameters
 
@@ -134,7 +134,7 @@ $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d/123
 
 ### HTTP Request
 
-`PUT {{ site.parku.api }}/slot/{slot_id}/{zip}`
+`PUT {{ site.bringmeister.api }}/slot/{slot_id}/{zip}`
 
 ### Parameters
 
