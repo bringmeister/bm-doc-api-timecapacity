@@ -63,6 +63,7 @@ $ curl {{ site.bringmeister.api }}/slot \
   "delivery_zone": "1",
   "store_no": "1234567",
   "price": "4.44",
+  "currency": "EUR",
   "from": "{{ site.time | date: '%Y-%m-%d' }}T16:00:00{{ site.time | date: '%z' }}",
   "to": "{{ site.time | date: '%Y-%m-%d' }}T18:00:00{{ site.time | date: '%z' }}"
 }
@@ -88,10 +89,10 @@ _TODO_ Define
 $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d
 ```
 
-> Response 200 OK
+> Response
 
 ```
-
+200 OK
 ```
 
 ### HTTP Request
