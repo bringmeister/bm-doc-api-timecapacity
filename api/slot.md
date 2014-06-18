@@ -26,6 +26,7 @@ $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d/123
   "delivery_zone": "1",
   "store_no": "1234567",
   "price": "4.44",
+  "currency": "EUR",
   "from": "{{ site.time | date: '%Y-%m-%d' }}T16:00:00{{ site.time | date: '%z' }}",
   "to": "{{ site.time | date: '%Y-%m-%d' }}T18:00:00{{ site.time | date: '%z' }}"
 }
@@ -33,7 +34,7 @@ $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d/123
 
 ### HTTP Request
 
-`GET {{ site.bringmeister.api }}/slot`
+`GET {{ site.bringmeister.api }}/slot/{slot_id}/{zip}`
 
 
 ### Parameters
@@ -89,15 +90,8 @@ $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d
 
 > Response
 
-```json
-{
-  "id": "005c4826-4e28-11e3-a675-d43d7eece53d",
-  "delivery_zone": "1",
-  "store_no": "1234567",
-  "price": "4.44",
-  "from": "{{ site.time | date: '%Y-%m-%d' }}T16:00:00{{ site.time | date: '%z' }}",
-  "to": "{{ site.time | date: '%Y-%m-%d' }}T18:00:00{{ site.time | date: '%z' }}"
-}
+```
+200 OK
 ```
 
 ### HTTP Request
@@ -121,20 +115,13 @@ $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d/123
 
 > Response
 
-```json
-{
-  "id": "005c4826-4e28-11e3-a675-d43d7eece53d",
-  "delivery_zone": "1",
-  "store_no": "1234567",
-  "price": "4.44",
-  "from": "{{ site.time | date: '%Y-%m-%d' }}T16:00:00{{ site.time | date: '%z' }}",
-  "to": "{{ site.time | date: '%Y-%m-%d' }}T18:00:00{{ site.time | date: '%z' }}"
-}
+```
+200 OK
 ```
 
 ### HTTP Request
 
-`PUT {{ site.bringmeister.api }}/slot/{slot_id}/{zip}`
+`PUT {{ site.bringmeister.api }}/slot/{slot_id}`
 
 ### Parameters
 
