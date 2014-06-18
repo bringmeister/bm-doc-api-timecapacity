@@ -55,7 +55,7 @@ $ curl {{ site.bringmeister.api }}/slot \
     --data-urlencode zip="012345"
 ```
 
-> Response
+> Response 201 Created
 
 ```json
 {
@@ -88,10 +88,10 @@ _TODO_ Define
 $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d
 ```
 
-> Response
+> Response 200 OK
 
 ```
-200 OK
+
 ```
 
 ### HTTP Request
