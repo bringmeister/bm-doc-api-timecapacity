@@ -7,7 +7,8 @@ Use them as a basic start into developing parku applications.
 If you want to make improvements to our guidelines, make a pull requests with your changes.
 
 ```sh
-$ git clone git@github.com:parku/docs.git parku-docs
+$ git clone git@bitbucket.org:bringmeister/bm-api-time-capacity.git parku-docs
+$ git remote add gh git@github.com:bringmeister/bm-doc-api-timecapacity.git
 $ make install
 $ make
 $ open http://localhost:9393
@@ -20,7 +21,7 @@ You should have a open browser with the latest guides.
 Make your changes and commit them. Push to GitHub.
 
 ```sh
-$ git push origin gh-pages
+$ git push gh gh-pages
 ```
 
 Sites gets recreated in a few seconds.

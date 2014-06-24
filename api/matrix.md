@@ -47,6 +47,23 @@ $ curl {{ site.bringmeister.api }}/matrix/12345
 
 Parameter      | Description
 ---            | ---
-`zip`          | The zip code as target location for food delivery __Required.__
+`zip`          | String(10) The zip code as target location for food delivery __Required.__
+
+### Response
+
+Parameter       | Description
+---             | ---
+`id`            | String UUID, The Slot Id
+`store_no`      | Int The Store Id
+`timeslot_no`   |
+`slot_date`     |
+`from`          | DateTime Time of Slot Start
+`to`            | DateTime Time of Slot End
+`finish`        | DateTime
+`price`         | Decimal(6,4) The price of the slot
+`currency`      | String(3) Currency by ISO
+`capacity`      |
+`working_shift` |
+`delivery_zone` |
 
 
