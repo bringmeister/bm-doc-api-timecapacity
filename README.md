@@ -24,4 +24,5 @@ Make your changes and commit them. Push to GitHub.
 $ git push gh gh-pages
 ```
 
+Open browser: http://bringmeister.github.io/bm-doc-api-timecapacity/
 Sites gets recreated in a few seconds.
