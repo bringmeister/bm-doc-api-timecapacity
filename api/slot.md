@@ -8,11 +8,17 @@ title: Slots
 
 All API requests to `{{ site.bringmeister.api }}/slot` require __HTTPS__.
 
-_TODO_ Detailed description what a slot is!
+A slot is a time period, defined by a date, begin time, and end time.
+Not for all zip codes the same set of slots is available.
+A slot, which is available for the zip code, can be reserved for the customer,
+booked by the customer, and cancelled or released by the shop.
 
 ## Reserve a Slot
 
-_TODO_ Define
+A slot is reserved for the customer when the customer selects the
+desired delivery time. At this moment the checkout is not completed,
+yet, but the customer has selected a delivery time already.
+
 
 ```sh
 $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d/12345
@@ -47,7 +53,9 @@ Parameter      | Description
 
 ## Book a Slot
 
-_TODO_ Define
+A slot is booked for the customer when the checkout is completed.
+At this time the previously made reservation changes into a booking.
+
 
 ```sh
 $ curl {{ site.bringmeister.api }}/slot \
@@ -83,7 +91,9 @@ Parameter      | Description
 
 ## Cancel a Slot
 
-_TODO_ Define
+A cancellation must be made when the customer cancels a
+previously made booking. Only complete bookings can be cancelled.
+
 
 ```sh
 $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d
@@ -108,7 +118,11 @@ Parameter      | Description
 
 ## Release a Slot
 
-_TODO_ Define
+A slot which is reserved for a customer has to be released
+after a fixed time period, if the customer did not complete
+the checkout by then. If the customer does not complete the
+checkout, the slot must be available again for new reservations.
+
 
 ```sh
 $ curl {{ site.bringmeister.api }}/slot/005c4826-4e28-11e3-a675-d43d7eece53d/12345

@@ -8,7 +8,9 @@ title: Matrix
 
 All API requests to `{{ site.bringmeister.api }}/matrix` require __HTTPS__.
 
-_TODO_ Detailed description what the matrix is!
+The matrix consists of a set of time slots that are in principle available
+for the requested zip code that the customer selected. A slot is described
+by a date, time slot begin, and time slot end.
 
 ## Retrieve the Matrix
 
