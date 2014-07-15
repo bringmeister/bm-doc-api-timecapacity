@@ -63,12 +63,15 @@ $ curl {{ site.bringmeister.api }}/slot \
     --data-urlencode zip="012345"
 ```
 
-> Response 201 Created
+> Response
+
+```
+201 CREATED
+```
 
 ```json
 {
   "id": "005c4826-4e28-11e3-a675-d43d7eece53d",
-  "delivery_zone": "1",
   "store_no": "1234567",
   "price": "4.44",
   "currency": "EUR",
