@@ -58,6 +58,6 @@ Parameter       | Description
 `to`            | DATETIME - Time of Slot End
 `finish`        | DATETIME - Final datetime until this slot can be booked
 `price`         | DECIMAL(6,4) - The price of the slot
-`currency`      | VARCHAR(3) - Currency as defined by (ISO 4217)[http://de.wikipedia.org/wiki/ISO_4217]
+`currency`      | VARCHAR(3) - Currency as defined by [ISO 4217](http://de.wikipedia.org/wiki/ISO_4217)
 `capacity`      | INT
 `working_shift` | TBD
